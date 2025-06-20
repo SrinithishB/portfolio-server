@@ -1,10 +1,11 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Express API deployed on Vercel",
+  "main": "api/index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "dev": "nodemon api/server.js",
+    "start": "node api/server.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,9 @@
     "mongodb": "^6.17.0",
     "mongoose": "^8.16.0",
     "multer": "^2.0.1",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.10"
   }
 }
